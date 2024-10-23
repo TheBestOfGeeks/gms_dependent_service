@@ -14,6 +14,10 @@ dependencies:
   flutter:
     sdk: flutter
 
+  firebase_crashlytics: ^3.5.5
+  firebase_core: ^2.31.0
+  firebase_analytics: ^10.10.5
+  firebase_messaging: ^14.9.2
   firebase_storage: ^11.7.5
 
   platform_dependent_services:
