@@ -1,31 +1,36 @@
+import 'dart:io';
+
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:platform_dependent_services/platform_dependencies.dart';
 
 class PlatformService implements PlatformDependencies {
   @override
-  Analytics get analytics => GmsAnalytics();
+  Analytics get analytics => throw UnimplementedError();
 
   @override
-  // TODO: implement core
   Core get core => throw UnimplementedError();
 
   @override
-  // TODO: implement messaging
   Messaging get messaging => throw UnimplementedError();
 
   @override
-  // TODO: implement storages
-  Storages get storages => throw UnimplementedError();
+  Storage get storage => FireBaseStorage();
 }
 
-class GmsAnalytics implements Analytics {
+class FireBaseStorage implements Storage {
+  final _storage = FirebaseStorage.instance;
+  late Reference _ref;
+
   @override
-  void dispose() {
-    // TODO: implement dispose
+  void dispose() {}
+
+  @override
+  Future<void> exportPersonalLogs(
+      {required String id, required File file}) async {
+    _ref = _storage.ref('logs/$id');
+    _ref.putFile(file, SettableMetadata(contentType: 'text')).ignore();
   }
 
   @override
-  Future<void> init() {
-    // TODO: implement init
-    throw UnimplementedError();
-  }
+  Future<void> init() async {}
 }

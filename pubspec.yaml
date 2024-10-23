@@ -14,6 +14,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+  firebase_storage: ^11.7.5
+
   platform_dependent_services:
     git: https://github.com/TheBestOfGeeks/platform_dependent_services
 
