@@ -25,9 +25,12 @@ class FireBaseStorage implements Storage {
   void dispose() {}
 
   @override
-  Future<void> exportPersonalLogs(
-      {required String id, required File file}) async {
+  Future<void> initReference({required String id}) async {
     _ref = _storage.ref('logs/$id');
+  }
+
+  @override
+  Future<void> exportPersonalLogs({required File file}) async {
     _ref.putFile(file, SettableMetadata(contentType: 'text')).ignore();
   }
 
