@@ -35,9 +35,9 @@ class MessagingImpl implements Messaging {
         (event) {
           final notification = event.notification;
           return MessageModel(
-            body: notification!.body,
+            body: notification?.body ?? '',
             data: event.data,
-            title: notification.title,
+            title: notification?.title ?? '',
           );
         },
       );
