@@ -44,8 +44,8 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDF7nAx1-V0bE4MFniHUSvWOCm6PHjzRwQ',
-    appId: '1:515867287206:web:ada2584754a08bf79ede67',
+    apiKey: '',
+    appId: '',
     messagingSenderId: '515867287206',
     projectId: 'thomas-munz',
     authDomain: 'thomas-munz.firebaseapp.com',
@@ -55,8 +55,8 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAAUVc3jj3V-DckfHCnGlQ40X86RCNhZQk',
-    appId: '1:515867287206:android:3d574a58aa0bd93e9ede67',
+    apiKey: '',
+    appId: '',
     messagingSenderId: '515867287206',
     projectId: 'thomas-munz',
     databaseURL: 'https://thomas-munz-default-rtdb.firebaseio.com',
@@ -64,8 +64,8 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCc0-yt1xHI_NEULOyxwx2dCOu3m18KZ80',
-    appId: '1:515867287206:ios:1b94ac2f4e9907249ede67',
+    apiKey: '',
+    appId: '',
     messagingSenderId: '515867287206',
     projectId: 'thomas-munz',
     databaseURL: 'https://thomas-munz-default-rtdb.firebaseio.com',
@@ -76,8 +76,8 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCc0-yt1xHI_NEULOyxwx2dCOu3m18KZ80',
-    appId: '1:515867287206:ios:9bba0b226ac1facc9ede67',
+    apiKey: '',
+    appId: '',
     messagingSenderId: '515867287206',
     projectId: 'thomas-munz',
     databaseURL: 'https://thomas-munz-default-rtdb.firebaseio.com',
