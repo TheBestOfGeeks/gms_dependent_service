@@ -8,10 +8,10 @@ class PlatformService implements PlatformDependencies {
   Analytics get analytics => throw UnimplementedError();
 
   @override
-  Core get core => FirebaseCore();
+  Core get core => FirebaseCoreImpl();
 
   @override
-  Messaging get messaging => throw MessagingImpl();
+  Messaging get messaging => MessagingImpl();
 
   @override
   Storage get storage => FireBaseStorage();
