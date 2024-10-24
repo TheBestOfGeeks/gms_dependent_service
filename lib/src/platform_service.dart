@@ -1,4 +1,5 @@
 import 'package:platform_dependent_service/src/services_implementation/core_impl.dart';
+import 'package:platform_dependent_service/src/services_implementation/messaging_impl.dart';
 import 'package:platform_dependent_service/src/services_implementation/storage_impl.dart';
 import 'package:platform_dependent_services/platform_dependencies.dart';
 
@@ -10,7 +11,7 @@ class PlatformService implements PlatformDependencies {
   Core get core => FirebaseCore();
 
   @override
-  Messaging get messaging => throw UnimplementedError();
+  Messaging get messaging => throw MessagingImpl();
 
   @override
   Storage get storage => FireBaseStorage();

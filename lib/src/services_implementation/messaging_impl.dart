@@ -67,7 +67,6 @@ class MessagingImpl implements Messaging {
 
   @override
   Future<void> getToken() {
-    // TODO: implement getToken
     throw UnimplementedError();
   }
 
